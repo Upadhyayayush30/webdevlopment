@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gpa</title>
+    <!-- <link rel="stylesheet" href="gpaa.css"> -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<script src="cal.js"></script>
+<style>
+  * {
+    /* margin of the style family  */
+    margin: 0;
+    /* padding of the style family */
+
+    padding: 0;
+    /* box sizing of the style family belong to the all type it provide to all code to css because upper s * there  */
+    box-sizing: border-box;
+    /* font family of the style family */
+    font-family: sans-serif;
+  }
+  
+  
+  body {
+    /* background of the image  */
+    background-image: linear-gradient(90deg, #25353c ,#BBC2C8);
+    color: white;
+  }
+  
+  #course-row {
+    /* now we will define the overview of the image  */
+    font-size: 20px;
+    /* this is for the font weight and the  */
+    font-weight: bolder; 
+    /* this is for margin f the course row  for gpa calculator */
+    margin-left: -2%;
+  }
+  
+  #credit-row {
+    /* for cridit row this is for the  */
+  
+    font-size: 20px;
+    /* for font-weight row this is for the */
+    font-weight: bolder;
+    /* this is for the margin means space from left side */
+    margin-left: 13%;
+  }
+  
+  #grade-row {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 8%;
+  }
+  
+  .calculator-box {
+    width: 50%;
+    height: auto;
+    border: 2px solid #3D515C;
+    margin: 100px auto;
+  /*  text-align: center; */
+  }
+  
+  
+  /* On screens that are 1200px or less, set the width to 75% */
+  @media screen and (max-width: 1200px) {
+   .calculator-box {
+      width: 70%;
+    }
+  }
+  
+  /* On screens that are 950px or less, set the width to 75% */
+  @media screen and (max-width: 950px) {
+   .calculator-box {
+      width: 75%;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the width to 90% */
+  @media screen and (max-width: 600px) {
+   .calculator-box {
+      width: 90%;
+    }
+  }
+  
+  
+  h1 {
+    padding: 15px;
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid #3D515C;
+    background-color: #3D515C;
+  }
+  
+  h1:hover {
+    padding: 15px;
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid #3D515C;
+    background-color: #ccc;
+    color: #000;
+  }
+  
+  p{
+    padding: 20px;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+  }
+   
+  #course-wrapper, form {
+    color: black;
+    padding-left: 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  input{
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+  }
+  select{
+    padding: 15px;
+    border: none;
+    border-radius: 7.5px;
+    width: 20%;
+  /*   height: 30px; */
+  }
+   button {
+    width: 15%;
+    height: 40px;
+    padding: 1px;
+    margin: 5px auto;
+  /*   margin-left: 10px; */
+    border-width: 3px;
+    border-radius: 10%;
+    border-style: solid;
+  }
+  
+   button:hover {
+    width: 15%;
+    height: 40px;
+    padding: 1px;
+    margin: 5px auto;
+    border-width: 3px;
+    border-radius: 10%;
+    border-style: solid;
+    color: #fff;
+    background: #000;
+    border-color: #000;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .lastp {
+    border: 1px solid #3D515C;
+    background-color: #3D515C;
+  }
+  .lastp p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+  } 
+  
+  .lastp p:hover {
+    background-color: #ccc;
+    color: #000;
+  } 
+  
+  
+  
+</style>
+
+<body>
+    <div class="calculator-box">
+        <h1>CGPA CALCULATOR</h1>
+        <p>
+          This CGPA Calculator is based on the Veltech University
+    
+        </p>
+
+        <div id="course-wrapper">
+          <form class="key-0">
+            <p> <label id="course-row" for="courses">Courses:</label> 
+             <label id="credit-row" for="credit-units">Credit Units:</label>
+           <label id="grade-row" for="grade">Grades: </label></p>
+              <input
+                type="text"
+                placeholder="Course No"
+                class="courses key-0"
+                required/>
+<!--               <label for="credit-units">Credit Units:</label> -->
+              <input
+                type="number"
+                class="credit-units key-0"
+                placeholder="Credit Units"
+                value=""
+                required
+              />
+<!--               <label for="grade">Grade: </label> -->
+              <select class="grade key-0" required>
+                <option class="grade" value="select">Select</option>
+                <option class="grade" value="10">S</option>
+                <option class="grade" value="9">A</option>
+                <option class="grade" value="8">B</option>
+                <option class="grade" value="7">C</option>
+                <option class="grade" value="6">D</option>
+                <option class="grade" value="RE">E</option>
+              </select>
+          </form>
+        </div>
+        <!-- <section class"btn">+ Add Course</section> -->
+        <div class="btn">
+          <button onclick="addCourse()">+ Add Course</button>
+          <button onclick="removeCourse()">- Remove Course</button>
+          <button onclick="calcCgpa()">Calculate CGPA</button>
+        </div>
+        <div class="lastp">
+          <p id="cgpa-calc">Your CGPA is:</p>
+        </div>
+      </div>
+    
+    
+</body>
+</html>

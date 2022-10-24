@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype_veltech</title>
+    <style>
+
+    </style>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<style>
+    
+
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background-color: #6DB3F2;
+        background: url('p1-background.jpg'); 
+        /* background: url('b4.jpg'); */
+
+        /* background: url('b2.jpg'); */
+        /* background:url('b1.jpg'); */
+        background-size: contain;
+        /* background-size: cover; */
+        /* background: scroll; */
+        background-repeat: no-repeat;
+
+       /* color: white;*/
+
+    }
+    top-box{
+        border: 2px solid red;
+        background-color: blueviolet;
+    }
+
+    .left {
+        color: #0a0101;
+        font-size: 4px;
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 55px;
+        top: 28px;
+
+
+
+    }
+
+    .left div {
+        text-align: center;
+    line-height: 2;
+    font-size: 18px;
+    }
+
+    .left img {
+        width: 111px;
+        margin-left: 4px;
+        margin-top: -22px;
+        margin-bottom: -7px;
+        /* filter: invert(100%); */
+
+    }
+
+    .mid {
+        display: block;
+        width: 47%;
+        margin: 20px 223px;
+        /* border: 2px solid green; */
+
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid blue; */
+        position: absolute;
+        right: 34px;
+        top: 28px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: rgb(32, 2, 2);
+        text-decoration: none;
+        padding: 34px 29px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 4px;
+        font-size: 215x;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .btn:hover {
+        background-color: rgb(134, 131, 131);
+    }
+
+    .container {
+        border: 6px inset rgb(250, 248, 248);
+        margin: 84px 68px;
+        padding: 75px;
+        width: 36%;
+        border-radius: 26px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .container2 {
+        border: 1px inset rgb(203, 223, 23);
+        background-color: #f3f3f3;
+    margin: 84px 3px;
+    padding: 66px;
+    width: 92%;
+    border-radius: 26px;
+    display: flex;
+    flex-wrap: wrap
+
+    }
+   
+    
+
+
+
+    .form-group input {
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 13px;
+        display: block;
+        padding: 6px;
+        width: 500px;
+        font-size: 25px;
+        margin: 12px auto;
+        font-family: 'Baloo Bhai 2', cursive;
+
+    }
+
+    .container h1 {
+    
+        text-align: center;
+        display: block;
+        width: 550px;
+        
+
+    }
+    .container2 h1 {
+    
+    text-align: center;
+    display: block;
+    width: 550px;
+    
+
+}
+
+    .container button {
+        display: block;
+        border-radius: 13px;
+        width: 104%;
+        margin: auto;
+    }
+
+    .devloper {
+        margin-left: 984px;
+        color: rgb(247, 76, 15);
+
+    }
+   .container1 {
+    border: 2px  rgb(250, 248, 248);
+    background-color: #968787;
+    margin: 0px 0px;
+    top: 499px;
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .p{
+        text-align: center;
+        font-size: 10px;
+    }
+    .news{
+        padding: 83px;
+    }
+  
+
+</style>
+
+<body>
+    <header class="header" style="border: 2px solid red;
+    background-color: #de0000c4;">
+        <p class="top-box">
+            <!-- left box for logo -->
+            <div class="left">
+
+                <img src="hf1.jpg" alt="loading">
+                <!-- <div>College</div> -->
+
+            </div>
+
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="main" class="active">Home</a></li>
+                    <li><a href="download.html">Syllabus</a></li>
+                    <li><a href="gpa.html">Gpa calculator</a></li>
+                    <li><a href="calender.html">Calender</a></li>
+                </ul>
+            </div>
+            <!-- right for button -->
+            <div class="right">
+                <button class="btn">Email Us</button>
+                <button class="btn">Call Us</button>
+            </div>
+        </p>
+
+    </header>
+    <div class="container">
+        <h1 class="">JOIN THE BEST
+            FOR THE BEST
+        </h1>
+        <!-- <form action="" noaction.php>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Mobile ">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form> -->
+        <img src="sharda.jpg" alt="veltech image" style="width: 578px;
+        height: 287px;
+        border: 5px solid #e90a0a;
+        height: 1;
+        border-radius: 40px;">
+        <p class="about">
+            Sharda University is a private university located in Knowledge Park III, Greater Noida, Uttar Pradesh, India. The school is part of the Sharda Group of Institutions, which was founded by P.K Gupta in 1996. The group has campuses in Agra, Mathura, and Greater Noida.</p>
+
+    </div>
+    <div class="container2">
+        <h1 class="">University Campus
+             
+        </h1>
+       
+        <img src="sharda1.jpg" alt="veltech image" 
+        style="width: 554px;
+        height: 287px;
+        border: 1px solid #9c8f8f;
+        height: 1;
+        border-radius: 40px;">
+        <p class="about">
+            The Entire Sharda  college look
+           
+         </p>
+
+    </div>
+    <div class="devloper">This is devloped by Ayush kumar uphadahaya :)</div>
+    <div>
+        <cont class="container1">
+            
+            <ul>
+                <li >Copyright © 2022 TeamEklavya.com
+                    <a href="news&blog.html" style=" padding: 63px;">News&Blog </a>
+                    <a href="main.html" style=" padding: 0px;">Home </a>
+                    <a href="gpa.html" style=" padding: 29px;">gpa calculator </a>
+                    
+                </li>
+                
+                
+
+                
+              </ul>
+        </cont>
+    </div>
+
+</body>
+
+</html>
